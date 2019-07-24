@@ -23,3 +23,9 @@ Note that users have no limit on how many assets they want on their favourites s
 A working server application with functional API is required, along with a clear readme.md. Useful and passing tests would be also be viewed favourably 
 
 It is appreciated, though not required, if a Dockerfile is included.
+
+## Submission
+
+Just a make a PR to the current repo!
+
+Good luck, potential colleague! 
