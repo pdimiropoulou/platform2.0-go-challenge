@@ -16,7 +16,7 @@ Insight (a small piece of text that provides some insight into a topic: e.g. 40%
 Audience (which is a series of characteristics, for that exercise lets focus on gender (Male, Female), birth country, age groups, hours spent on social media, number of purchases last month)
 e.g. Males from 24-35 that spent more than 3hours on social media daily.
 
-Build a web server which has some endpoint to receive a user id and return a list of all the user’s assets. Also we want endpoints that would add an asset to favourite, remove it, or edit its description. Assets obviously can share some common attributes (like their description) but they also have completely different structure and data. It’s up to you to decide the structure and we are not looking for something overly complex here (especially for the cases of audiences). There is no need to have/deploy/create an actual database although we would like to discuss about storage options and data representations.
+Build a web server which has some endpoint to receive a user id and return a list of all the user’s assets. Also we want endpoints that would add an asset to favourites, remove it, or edit its description. Assets obviously can share some common attributes (like their description) but they also have completely different structure and data. It’s up to you to decide the structure and we are not looking for something overly complex here (especially for the cases of audiences). There is no need to have/deploy/create an actual database although we would like to discuss about storage options and data representations.
 
 Note that users have no limit on how many assets they want on their favourites so your service will need to provide a reasonable response time.
 
