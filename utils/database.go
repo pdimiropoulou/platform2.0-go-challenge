@@ -7,16 +7,15 @@ import (
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
-	"gorm.io/gorm/logger"
 )
 
 var DB *gorm.DB
 var err error
 
 func ConnectPostgresDB() {
-	DB, err = gorm.Open(postgres.Open(os.Getenv("ELEPHANTSQL_URL")), &gorm.Config{
-		Logger: logger.Default.LogMode(logger.Info),
-	})
+	DB, err = gorm.Open(postgres.Open(os.Getenv("ELEPHANTSQL_URL")), &gorm.Config{})
+	// 	Logger: logger.Default.LogMode(logger.Info),
+	// })
 	if err != nil {
 		log.Fatal(err)
 	}

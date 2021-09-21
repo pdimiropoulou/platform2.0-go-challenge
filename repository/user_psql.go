@@ -2,7 +2,6 @@ package repository
 
 import (
 	"errors"
-	"fmt"
 	"strings"
 
 	"gorm.io/gorm"
@@ -27,8 +26,6 @@ func (u UserRepository) AddUser(db *gorm.DB, user models.User) (int, error) {
 func (u UserRepository) LoginUser(db *gorm.DB, user models.User, email string) (models.User, error) {
 	err := utils.DB.Where("email = ?", email).Find(&user).Error
 	errors.Is(err, gorm.ErrRecordNotFound)
-	//errdc := bcrypt.CompareHashAndPassword([]byte(user.Password), []byte(user.Password))
-	fmt.Println(user)
 	if err != nil {
 		return user, err
 	}
